@@ -1,0 +1,14 @@
+<div class="card mt-5">
+  <div class="card-header">Užduočių sąrašas</div>
+  <div class="card-body">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let preke of prekes; let kiekis of prekiuKiekis; let i=index">
+        {{ preke }} {{ kiekis }}
+        <button class="btn btn-danger btn-sm float-end" (click)="istrinti(i)">Ištrinti prekę</button>
+      </li>
+
+    </ul>
+
+
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="card mt-5">
+  <div class="card-header">Pridėti naują prekę</div>
+  <div class="card-body">
+    <div class="mb-3">
+      <label for="pavadinimas" class="form-label">Pavadinimas</label>
+      <input type="text" id="pavadinimas" class="form-control" [(ngModel)]="pavadinimas">
+      <label for="kiekis" class="form-label">Kiekis</label>
+      <input type="text" id="kiekis" class="form-control" [(ngModel)]="kiekis">
+    </div>
+    <button class="btn btn-success" (click)="pridetiPreke()">Pridėti naują prekę</button>
+
+
+  </div>
+</div>
