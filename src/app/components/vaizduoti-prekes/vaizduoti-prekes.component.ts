@@ -23,4 +23,8 @@ export class VaizduotiPrekesComponent {
   public istrinti(i:number) {
     this.prekesService.pasalintiPreke(i);
   }
+
+  public istrinti_viska() {
+    this.prekesService.pasalintiViska();
+  }
 }

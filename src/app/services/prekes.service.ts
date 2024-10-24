@@ -26,4 +26,9 @@ export class PrekesService {
     this.prekes.splice(i,1);
     this.issaugoti();
   }
+
+  public pasalintiViska() {
+    this.prekes.length = 0;
+    this.issaugoti();
+  }
 }
