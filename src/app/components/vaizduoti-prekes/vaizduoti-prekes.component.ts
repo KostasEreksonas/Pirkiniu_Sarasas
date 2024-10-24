@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {PrekesService} from "../../services/prekes.service";
+import { Prekes } from '../../prekes';
 
 @Component({
   selector: 'app-vaizduoti-prekes',
@@ -11,14 +12,12 @@ import {PrekesService} from "../../services/prekes.service";
   styleUrl: './vaizduoti-prekes.component.css'
 })
 export class VaizduotiPrekesComponent {
-  public prekes:String[]=[];
-  public prekiuKiekis:String[]=[];
+  public prekes:Prekes[]=[];
   public pavadinimas:String="";
-  public kiekis=0;
+  public kiekis:Number=0;
 
   public constructor(private prekesService:PrekesService) {
     this.prekes=this.prekesService.prekes;
-    this.prekiuKiekis=this.prekesService.prekiuKiekis;
   }
 
   public istrinti(i:number) {
