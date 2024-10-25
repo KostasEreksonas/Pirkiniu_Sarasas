@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {PrekesService} from "../../services/prekes.service";
 import {FormsModule} from "@angular/forms";
-import { Prekes } from '../../interfaces/prekes';
+import { Prekes } from '../../models/prekes';
 
 @Component({
   selector: 'app-prideti-prekes',
