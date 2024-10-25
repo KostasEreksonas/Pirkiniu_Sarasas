@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {PrekesService} from "../../services/prekes.service";
-import { Prekes } from '../../prekes';
+import { Prekes } from '../../interfaces/prekes';
 
 @Component({
   selector: 'app-vaizduoti-prekes',

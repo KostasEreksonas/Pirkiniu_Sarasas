@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Prekes } from '../prekes';
+import { Prekes } from '../interfaces/prekes';
 
 @Injectable({
   providedIn: 'root'
